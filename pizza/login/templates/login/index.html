@@ -1,0 +1,10 @@
+{% extends "login/base.html" %}
+{% block head %}
+  <title>Index</title>
+{% endblock %}
+{% block body %}
+  {% for stu in students %}
+    {{stu.name}}<br>
+    {{stu.Math}}-{{stu.Scinece}}-{{stu.Language}}<br>
+  {% endfor %}
+{% endblock %}
